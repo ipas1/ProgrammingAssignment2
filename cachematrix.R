@@ -1,7 +1,11 @@
 # The functions in this file compute inverse of a matrix using caching
 
 # makeCacheMatrix function creates cache matrix object
-# with 4 functions in the list: set, get, setInverse and getInverse
+# with 4 functions in the list: 
+#   set: set the value of the matrix
+#   get: get the value of the matrix
+#   setInverse: set the value of the inverse
+#   getInverse: get the value of the inverse
 # it takes parameter x of type matrix
 # and returns a list with 4 list items - 4 functions listed above
 makeCacheMatrix <- function(x = matrix()) {
