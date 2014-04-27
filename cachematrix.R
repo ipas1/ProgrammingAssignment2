@@ -6,20 +6,18 @@
 # and returns a list with 4 list items - 4 functions listed above
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
-        set <- function(y) {
+        set <- function(y) {                      # define set function
                 x <<- y
                 m <<- NULL
         }
-        get <- function() x
-        setInverse <- function(solve) m <<- solve
-        getInverse <- function() m
-        list(set = set, get = get,
-             setInverse = setInverse,
+        get <- function() x                       # define get function
+        setInverse <- function(solve) m <<- solve # define setInverse function
+        getInverse <- function() m                # define getInverse function
+        list(set = set, get = get,                # create and return the list
+             setInverse = setInverse,             # with 4 functions
              getInverse = getInverse)
 }
 
-
-## Write a short comment describing this function
 # cacheSolve function calculates inverse of a matrix
 # it uses makeCacheMatrix function and expects input parameter x of the type
 # created by makeCacheMatrix which is special matrix representation
